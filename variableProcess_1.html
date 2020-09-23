@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/base.css?v=20208021"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/common.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/pro.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/popup.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/proc.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="https://www.onsure.co.kr/css/p/jquery-ui.css" /> -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/n_base.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/n_layout.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/n_proDetail.css?v=20208021"
+    />
+    <!-- 20181224_추가 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/n_sub.css?v=20200908"
+    />
+    <!-- 20181228_추가 -->
+    <link rel="stylesheet" type="text/css" href="./variableP.css" />
+    <script
+      type="text/javascript"
+      src="https://www.onsure.co.kr/js/lib/jquery-1.11.1.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="pension_process">
+      <ol>
+        <li class="selected"><span>가입 적합성진단</span></li>
+        <li class=""><span>펀드 선택</span></li>
+        <li class=""><span>보험료 계산</span></li>
+      </ol>
+    </div>
+
+    <div class="pension_process_cont">
+      <dl class="adviser-list">
+        <dt class="selected">
+          <span>
+            최대한<br />
+            안정적으로
+          </span>
+        </dt>
+        <dt>
+          <span>
+            안정과 수익을<br />
+            균형적으로</span
+          >
+        </dt>
+        <dt>
+          <span>
+            조금 위험해도<br />
+            수익 추구</span
+          >
+        </dt>
+        <dt>
+          <span>
+            절대적으로<br />
+            수익 추구</span
+          >
+        </dt>
+      </dl>
+
+      <div class="pension_compatibility">
+        <div class="cont pension_border_bottom">
+          <div class="pension_choose pension_border_bottom">
+            <span class="pension_choose_title">투자방식 선택</span>
+            <div class="n_radioForm">
+              <span class="n_inpRdo n_basic">
+                <input
+                  type="radio"
+                  id="rdo01"
+                  name="rdo001"
+                  checked="checked"
+                />
+                <label for="rdo01"
+                  >전문가가 직접 투자하는 자산배분형 펀드
+                </label>
+              </span>
+              <span class="n_inpRdo n_basic">
+                <input type="radio" id="rdo02" name="rdo001" />
+                <label for="rdo02">내가 직접 관리하는 펀드 포트폴리오</label>
+              </span>
+            </div>
+          </div>
+          <div class="pension_choose pension_border_bottom">
+            <span class="pension_choose_title">펀드 비율 선택</span>
+            <div class="n_radioForm">
+              <span class="n_inpRdo n_basic">
+                <input
+                  type="radio"
+                  id="rdo03"
+                  name="rdo002"
+                  checked="checked"
+                />
+                <label for="rdo03">전문가 추천 비율 </label>
+              </span>
+              <span class="n_inpRdo n_basic">
+                <input type="radio" id="rdo04" name="rdo002" />
+                <label for="rdo04">비율 직접 선택</label>
+              </span>
+            </div>
+          </div>
+          <!-- select_opt : 비율 직접 선택  -->
+          <div
+            class="pension_choose_ratio_wrap pension_border_bottom select_opt"
+          >
+            <ul class="pension_choose_ratio">
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title blue">국내채권형</div>
+                  <span class="sub_title">
+                    채권형 | 국내우량채권 중심의 채권 구성
+                  </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+                <div class="right_select">
+                  <select name="GoalDateMonth" id="select_01">
+                    <option value="01">5%</option>
+                    <option value="02">10%</option>
+                    <option value="03">15%</option>
+                  </select>
+                </div>
+                <div></div>
+              </li>
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title blue">글로벌채권형</div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title blue">글로벌하이일드채권형</div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title pink">미국주식형</div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title pink">일반주식형</div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title pink">인덱스주식형</div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title pink">글로벌주식형</div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+              <li class="purple">
+                <div class="left">
+                  <div class="p_ratio_opt_title purple_">
+                    글로벌인프라투자형
+                  </div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title yellow">프리미엄주식파생형</div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+              <li>
+                <div class="left">
+                  <div class="p_ratio_opt_title purple_">
+                    글로벌멀티에셋자산배분형
+                  </div>
+                  <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+                </div>
+                <div class="right">
+                  <span class="number">5</span><span class="percent">%</span>
+                </div>
+              </li>
+            </ul>
+            <div class="ratio_total">
+              <div class="left">
+                <div class="p_ratio_opt_title blue">채권형</div>
+                <div class="p_ratio_opt_title pink">주식형</div>
+                <div class="p_ratio_opt_title purple_">포트폴리오</div>
+                <div class="p_ratio_opt_title yellow">기타</div>
+              </div>
+              <span class="right_text">선택 비율합계</span>
+              <span class="right_number">100%</span>
+            </div>
+            <div class="ratio_total_desc">
+              * 펀드는 최대 10개까지 선택가능하며 선택비율의 합계는 100%가
+              되어야 합니다.
+            </div>
+          </div>
+          <div class="pension_danger_wrap pension_border_bottom">
+            <div class="title">펀드 구성 위험 지수</div>
+            <div class="pension_danger">
+              <div class="low_name">저수익<br />저위험</div>
+              <div class="danger_slider">
+                <span class="low_num">0%</span>
+                <div class="danger_slider_bar"></div>
+                <div class="danger_slider_button"></div>
+                <span class="high_num">100%</span>
+              </div>
+              <div class="high_name">고수익<br />고위험</div>
+            </div>
+          </div>
+          <div class="step_1_last">
+            <div class="title">
+              선택 가능한 원금 보증 옵션 : 100%, 90%, 70%, 미보증
+            </div>
+            <div class="cont">
+              * 펀드 구성 위험지수에 따라 보증 수준이 상이할 수 있습니다.<br />
+              * 글로벌하이일드채권형, 프리미엄주식파생형, 글로벌주식형,
+              글로벌인프라투자형 총 4개 펀드의 각 펀드비율은 100% 보증(1종)을
+              원하실 경우 30% 이하, 90% 보증(2종)을 원하실 경우 50% 이하를
+              선택하셔야 합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="next_btn_wrap">
+      <a href="#" class="btn05">다음</a>
+    </div>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        window.setSlider = function (percent) {
+          var barWidth = $(".danger_slider_bar").width();
+          var buttonWidth = $(".danger_slider_button").width();
+          $(".danger_slider_button")[0].style.left =
+            (barWidth * percent) / 100 - buttonWidth / 2 - 2 + "px";
+        };
+      });
+    </script>
+  </body>
+</html>

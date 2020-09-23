@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/base.css?v=20208021"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/common.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/pro.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/popup.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/proc.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="https://www.onsure.co.kr/css/p/jquery-ui.css" /> -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/n_base.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/n_layout.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/n_proDetail.css?v=20208021"
+    />
+    <!-- 20181224_추가 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.onsure.co.kr/css/p/n_sub.css?v=20200908"
+    />
+    <!-- 20181228_추가 -->
+    <link rel="stylesheet" type="text/css" href="./variableP.css" />
+  </head>
+  <body>
+    <div class="pension_process">
+      <ol>
+        <li class=""><span>가입 적합성진단</span></li>
+        <li class="selected"><span>펀드 선택</span></li>
+        <li class=""><span>보험료 계산</span></li>
+      </ol>
+    </div>
+    <div class="pension_step_2">
+      <h3>펀드 포트폴리오</h3>
+      <a href="#">펀드 다시 선택하기</a>
+      <div class="pension_choose_ratio_wrap">
+        <ul class="pension_choose_ratio">
+          <li>
+            <div class="left">
+              <div class="p_ratio_opt_title blue">국내채권형</div>
+              <span class="sub_title">
+                채권형 | 국내우량채권 중심의 채권 구성
+              </span>
+            </div>
+            <div class="right">
+              <span class="number">5</span><span class="percent">%</span>
+            </div>
+          </li>
+          <li>
+            <div class="left">
+              <div class="p_ratio_opt_title pink">미국주식형</div>
+              <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+            </div>
+            <div class="right">
+              <span class="number">5</span><span class="percent">%</span>
+            </div>
+          </li>
+          <li class="purple">
+            <div class="left">
+              <div class="p_ratio_opt_title purple_">글로벌인프라투자형</div>
+              <span class="sub_title"> 채권형 | 펀드 간략 설명 </span>
+            </div>
+            <div class="right">
+              <span class="number">5</span><span class="percent">%</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h3>원금보호 옵션</h3>
+      <div class="protect_opt">
+        <div class="n_radioForm">
+          <span class="n_inpRdo n_basic">
+            <input type="radio" id="rdo01" name="rdo001" checked="checked" />
+            <label for="rdo01">선택하지 않음(미보증)</label>
+          </span>
+          <span class="n_inpRdo n_basic">
+            <input type="radio" id="rdo02" name="rdo001" />
+            <label for="rdo02">70%</label>
+          </span>
+          <span class="n_inpRdo n_basic">
+            <input type="radio" id="rdo02" name="rdo001" />
+            <label for="rdo02">90%</label>
+          </span>
+          <span class="n_inpRdo n_basic">
+            <input type="radio" id="rdo02" name="rdo001" />
+            <label for="rdo02">100%</label>
+          </span>
+        </div>
+        <span>
+          * ‘납입 완료한 보험료’를 선택하신 원금보호 옵션만큼 보호 받으실 수
+          있습니다.
+        </span>
+      </div>
+
+      <h3>보험 세부 조건 선택하기</h3>
+      <div class="detail_opt">
+        <div class="opt_item">
+          <span>연금개시연령</span>
+          <select class="sel02" name="GoalDateMonth" id="select_01">
+            <option value="65">65세</option>
+          </select>
+        </div>
+        <div class="opt_item">
+          <span>연금수령형태</span>
+          <select class="sel02" name="GoalDateMonth" id="select_02">
+            <option value="10">종신(10년보증)</option>
+          </select>
+        </div>
+        <div class="opt_item">
+          <span>납입기간</span>
+          <select class="sel02" name="GoalDateMonth" id="select_03">
+            <option value="50">10년차(50세)</option>
+          </select>
+        </div>
+        <div class="opt_item">
+          <span>월보험료</span>
+          <input type="number" value="30" /><span>만원</span>
+        </div>
+      </div>
+      <button>다시 계산하기</button>
+      <div class="join_wrap"></div>
+    </div>
+  </body>
+</html>
